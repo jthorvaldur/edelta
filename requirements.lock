@@ -10,3 +10,186 @@
 #   universal: false
 
 -e file:.
+absl-py==2.1.0
+    # via tensorboard
+aiohappyeyeballs==2.4.0
+    # via aiohttp
+aiohttp==3.10.5
+    # via fsspec
+aiosignal==1.3.1
+    # via aiohttp
+attrs==24.2.0
+    # via aiohttp
+contourpy==1.3.0
+    # via matplotlib
+cramjam==2.8.3
+    # via fastparquet
+cycler==0.12.1
+    # via matplotlib
+fastparquet==2024.5.0
+    # via edelta
+filelock==3.15.4
+    # via torch
+    # via triton
+fonttools==4.53.1
+    # via matplotlib
+frozenlist==1.4.1
+    # via aiohttp
+    # via aiosignal
+fsspec==2024.9.0
+    # via fastparquet
+    # via lightning
+    # via pytorch-lightning
+    # via torch
+grpcio==1.66.1
+    # via tensorboard
+idna==3.8
+    # via yarl
+jinja2==3.1.4
+    # via torch
+joblib==1.4.2
+    # via scikit-learn
+kiwisolver==1.4.7
+    # via matplotlib
+lightning==2.4.0
+    # via edelta
+lightning-utilities==0.11.7
+    # via lightning
+    # via pytorch-lightning
+    # via torchmetrics
+markdown==3.7
+    # via tensorboard
+markupsafe==2.1.5
+    # via jinja2
+    # via werkzeug
+matplotlib==3.9.2
+    # via edelta
+    # via seaborn
+mpmath==1.3.0
+    # via sympy
+multidict==6.0.5
+    # via aiohttp
+    # via yarl
+networkx==3.3
+    # via torch
+numpy==2.1.1
+    # via contourpy
+    # via edelta
+    # via fastparquet
+    # via matplotlib
+    # via pandas
+    # via pyarrow
+    # via scikit-learn
+    # via scipy
+    # via seaborn
+    # via tensorboard
+    # via torchmetrics
+nvidia-cublas-cu12==12.1.3.1
+    # via nvidia-cudnn-cu12
+    # via nvidia-cusolver-cu12
+    # via torch
+nvidia-cuda-cupti-cu12==12.1.105
+    # via torch
+nvidia-cuda-nvrtc-cu12==12.1.105
+    # via torch
+nvidia-cuda-runtime-cu12==12.1.105
+    # via torch
+nvidia-cudnn-cu12==9.1.0.70
+    # via torch
+nvidia-cufft-cu12==11.0.2.54
+    # via torch
+nvidia-curand-cu12==10.3.2.106
+    # via torch
+nvidia-cusolver-cu12==11.4.5.107
+    # via torch
+nvidia-cusparse-cu12==12.1.0.106
+    # via nvidia-cusolver-cu12
+    # via torch
+nvidia-nccl-cu12==2.20.5
+    # via torch
+nvidia-nvjitlink-cu12==12.6.68
+    # via nvidia-cusolver-cu12
+    # via nvidia-cusparse-cu12
+nvidia-nvtx-cu12==12.1.105
+    # via torch
+packaging==24.1
+    # via fastparquet
+    # via lightning
+    # via lightning-utilities
+    # via matplotlib
+    # via pytorch-lightning
+    # via tensorboard
+    # via torchmetrics
+pandas==2.2.2
+    # via edelta
+    # via fastparquet
+    # via seaborn
+pillow==10.4.0
+    # via matplotlib
+protobuf==5.28.0
+    # via tensorboard
+pyarrow==17.0.0
+    # via edelta
+pyparsing==3.1.4
+    # via matplotlib
+pyqt6==6.7.1
+    # via edelta
+pyqt6-qt6==6.7.2
+    # via pyqt6
+pyqt6-sip==13.8.0
+    # via pyqt6
+python-dateutil==2.9.0.post0
+    # via matplotlib
+    # via pandas
+pytorch-lightning==2.4.0
+    # via lightning
+pytz==2024.1
+    # via pandas
+pyyaml==6.0.2
+    # via lightning
+    # via pytorch-lightning
+scikit-learn==1.5.1
+    # via edelta
+scipy==1.14.1
+    # via scikit-learn
+seaborn==0.13.2
+    # via edelta
+setuptools==74.1.2
+    # via lightning-utilities
+    # via tensorboard
+    # via torch
+six==1.16.0
+    # via python-dateutil
+    # via tensorboard
+sympy==1.13.2
+    # via torch
+tensorboard==2.17.1
+    # via edelta
+tensorboard-data-server==0.7.2
+    # via tensorboard
+threadpoolctl==3.5.0
+    # via scikit-learn
+torch==2.4.1
+    # via edelta
+    # via lightning
+    # via pytorch-lightning
+    # via torchmetrics
+torchmetrics==1.4.1
+    # via lightning
+    # via pytorch-lightning
+tqdm==4.66.5
+    # via lightning
+    # via pytorch-lightning
+triton==3.0.0
+    # via torch
+typing-extensions==4.12.2
+    # via lightning
+    # via lightning-utilities
+    # via pytorch-lightning
+    # via torch
+tzdata==2024.1
+    # via pandas
+werkzeug==3.0.4
+    # via tensorboard
+yarl==1.9.11
+    # via aiohttp

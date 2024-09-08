@@ -3,10 +3,9 @@ import warnings
 import matplotlib.pyplot as plt
 import pandas as pd
 import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
-
 from attention import AttentionAutoencoder
 from basecls import *
+from torch.utils.data import DataLoader, TensorDataset
 
 # Assuming df is your DataFrame with shape [1e6, 8]
 
@@ -14,7 +13,7 @@ warnings.filterwarnings("ignore")
 
 df = pd.DataFrame(np.random.rand(1024 * 8, 8)).astype(np.float32)
 
-N = 1024 * 4
+N = 1024 * 16
 n_basis = 8
 df_data = np.random.rand(N, n_basis)
 index = np.arange(N)
@@ -36,11 +35,11 @@ d_model = 32
 nhead = 4
 num_encoder_layers = 2
 num_decoder_layers = 2
-dim_feedforward = 512
-dropout = 0.05
-batch_size = 16
+dim_feedforward = 1024
+dropout = 0.005
+batch_size = 128
 epochs = 12
-learning_rate = 0.001
+learning_rate = 0.003
 
 # Data preparation for sequence prediction (next step prediction)
 sequences = data[:-1].view(-1, 1, n_basis)
@@ -58,9 +57,10 @@ model = TransformerModel(
     dim_feedforward,
     dropout,
 )
-model = AttentionAutoencoder(input_dim, d_model, hidden_size=128)
+# model = AttentionAutoencoder(input_dim, d_model, hidden_size=128)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+optmiizer = optim.SGD(model.parameters(), lr=learning_rate)
 train_model(epochs, dataloader, optimizer, model, criterion)
 
 with torch.no_grad():
@@ -80,16 +80,3 @@ for i in range(n_basis):
     predictions.iloc[:, i].plot()
     inputs.iloc[:, i].plot()
 plt.show()
-
-# # Plotting entropy over time for visualization
-# plt.figure(figsize=(10, 5))
-# for name, _ in entropy_history[0]:
-#     entropies_over_time = [epoch_data for epoch_data in entropy_history if name in dict(epoch_data)]
-#     if entropies_over_time:
-#         epochs, ents = zip(*[(i*10, ent) for i, epoch_data in enumerate(entropies_over_time) for n, ent in epoch_data if n == name])
-#         plt.plot(epochs, ents, label=name)
-# plt.xlabel('Epochs')
-# plt.ylabel('Entropy')
-# plt.legend()
-# plt.title('Weight Entropy Over Training')
-# plt.show()

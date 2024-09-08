@@ -5,7 +5,19 @@ description = "Add your description here"
 authors = [
     { name = "jthor", email = "jthorarinson@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "torch>=2.4.1",
+    "numpy>=2.1.1",
+    "pandas>=2.2.2",
+    "pyqt6>=6.7.1",
+    "scikit-learn>=1.5.1",
+    "lightning>=2.4.0",
+    "tensorboard>=2.17.1",
+    "matplotlib>=3.9.2",
+    "seaborn>=0.13.2",
+    "fastparquet>=2024.5.0",
+    "pyarrow>=17.0.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 

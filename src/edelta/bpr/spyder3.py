@@ -1,4 +1,4 @@
-from basefunc import *
+from utils.basefunc import *
 
 
 if __name__ == "__main__":

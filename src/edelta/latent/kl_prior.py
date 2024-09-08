@@ -1,12 +1,11 @@
+import lightning as L
 import torch
 import torch.nn as nn
-import torch.optim as optim
-import lightning as L
 import torch.nn.functional as F
+import torch.optim as optim
+from edelta.ttn.vqvae import VQVAE
 from torch.distributions import Normal
-from ttn.vqvae import VQVAE
 from torch.utils.data import DataLoader, TensorDataset
-
 
 # Assuming you have your VQVAE model defined and initialized as `vqvae`
 # And you have your data loader `dataloader`
