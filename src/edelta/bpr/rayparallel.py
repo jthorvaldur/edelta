@@ -4,7 +4,7 @@ import pacmap
 import pandas as pd
 import ray
 from utils.basefunc import *
-from sklearn.cluster import KMeans, SpectralClustering
+from sklearn.cluster import KMeans
 from sklearn.linear_model import BayesianRidge
 from sklearn.manifold import TSNE
 

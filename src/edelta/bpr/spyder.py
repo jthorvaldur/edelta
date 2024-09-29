@@ -6,10 +6,8 @@ import pacmap
 import pandas as pd
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
 from utils.basefunc import genweights_df, get_test_data_df
-from sklearn.cluster import KMeans, SpectralClustering
+from sklearn.cluster import KMeans
 from sklearn.manifold import TSNE
 
 torch.manual_seed(1)

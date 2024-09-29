@@ -1,7 +1,6 @@
 import warnings
 
 import numpy as np
-import test
 import torch
 
 from qvocab.util.test_util import test_model_vector

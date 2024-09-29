@@ -1,8 +1,5 @@
 import os
-import sys
-import time
 import warnings
-from math import pi
 
 import matplotlib.pyplot as plt
 import numpy as np

@@ -1,8 +1,6 @@
 # Cell 1: Imports and Initial Setup
 import numpy as np
-import torch
 from sklearn.cluster import KMeans
-from sklearn.preprocessing import normalize
 
 
 # Generate synthetic data

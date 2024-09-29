@@ -1,11 +1,7 @@
 import numpy as np
 import warnings
 
-import matplotlib.pyplot as plt
-import pandas as pd
 import torch
-import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
 import torch.nn.functional as F
 
 
@@ -25,7 +21,6 @@ def attention(query, key, value, mask=None, dropout=None):
 query = torch.tensor([[1.0, 0.0, 0.0]])
 
 
-from attention import AttentionAutoencoder
 # from basecls import *
 
 # Assuming df is your DataFrame with shape [1e6, 8]

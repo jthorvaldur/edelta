@@ -2,11 +2,7 @@ import warnings
 
 import numpy as np
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from vqvae.older.runvq import VQVAE, VectorQuantizer
-from torch.utils.data import DataLoader, TensorDataset
+from vqvae.older.runvq import VQVAE
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 

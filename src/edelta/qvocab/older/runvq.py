@@ -183,7 +183,6 @@ if __name__ == "__main__":
     batch_size = 64
     num_epochs = 100
     learning_rate = 0.008
-    import sys
 
     # Generate synthetic data
     data = np.random.randn(num_samples, input_dim).astype(np.float32)

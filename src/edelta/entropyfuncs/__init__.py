@@ -61,7 +61,7 @@ def plugin_entropy(data, bins=10):
 
 
 def gaussian_mle_entropy(data):
-    mu = np.mean(data)
+    np.mean(data)
     sigma = np.std(data)
     entropy = 0.5 * np.log(2 * np.pi * np.e * sigma**2)
     return entropy

@@ -1,5 +1,3 @@
-import sys
-
 import lightning as L
 import torch
 import torch.nn as nn

@@ -3,7 +3,6 @@ import warnings
 import matplotlib.pyplot as plt
 import pandas as pd
 import torch.optim as optim
-from attention import AttentionAutoencoder
 from basecls import *
 from torch.utils.data import DataLoader, TensorDataset
 
